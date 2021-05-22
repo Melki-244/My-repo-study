@@ -16,7 +16,8 @@ def nao_quer_jogar?
   quero_jogar = gets.strip
   nao_quero_jogar = quero_jogar.upcase == "N"
 end
-def cabecalho_de_tentativa(chutes, erros)
+def cabecalho_de_tentativa(chutes, erros, mascara)
+    puts "Palavra secreta: #{mascara}"
     puts "Palavra secreta:"
     puts "\n\n\n\n"
     puts "Erros até agora: #{erros}"
